@@ -10,9 +10,12 @@ concurrency:
   group: ci-${{ github.ref }}
   cancel-in-progress: ${{ github.ref != 'refs/heads/master' }}
 
+# packages: write is required by the shared workflow's publish job, even though
+# it never runs here (no publish-image).
 permissions:
   contents: read
   checks: write
+  packages: write
   pull-requests: read
 
 jobs:

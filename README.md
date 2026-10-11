@@ -1,6 +1,6 @@
 # CCSWE.AppManager.DeviceOwner
 
-[![CI](https://img.shields.io/github/actions/workflow/status/ccswe-apps/CCSWE.AppManager.DeviceOwner/ci.yml?branch=master&label=build)](https://github.com/ccswe-apps/CCSWE.AppManager.DeviceOwner/actions/workflows/ci.yml)
+[![CI](https://img.shields.io/github/actions/workflow/status/ccswe-apps/CCSWE.AppManager.DeviceOwner/dotnet-build-app.yml?branch=master&label=build)](https://github.com/ccswe-apps/CCSWE.AppManager.DeviceOwner/actions/workflows/dotnet-build-app.yml)
 [![CodeQL](https://img.shields.io/github/actions/workflow/status/ccswe-apps/CCSWE.AppManager.DeviceOwner/codeql.yml?branch=master&label=codeql)](https://github.com/ccswe-apps/CCSWE.AppManager.DeviceOwner/actions/workflows/codeql.yml)
 [![Release](https://img.shields.io/github/v/release/ccswe-apps/CCSWE.AppManager.DeviceOwner?display_name=tag&sort=semver)](https://github.com/ccswe-apps/CCSWE.AppManager.DeviceOwner/releases/latest)
 [![License: GPL v3](https://img.shields.io/badge/license-GPLv3-blue.svg)](LICENSE)
@@ -132,7 +132,7 @@ dotnet tool run nbgv tag      # creates v<major>.<minor>.<patch> for HEAD
 git push origin <tag>
 ```
 
-Pushing the `v*` tag triggers `.github/workflows/release.yml`, which publishes one framework-dependent archive
+Pushing the `v*` tag triggers `.github/workflows/dotnet-release-app.yml`, which publishes one framework-dependent archive
 per RID (`win-x64`/`linux-x64`/`osx-x64`/`osx-arm64`), each containing both the Desktop and Console, and creates
 a GitHub Release with auto-generated notes. Bump `version.json` (and commit) when you want a new major/minor.
 

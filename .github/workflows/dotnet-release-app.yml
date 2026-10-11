@@ -1,0 +1,19 @@
+name: Release
+
+on:
+  push:
+    tags: [ 'v*' ]
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write   # create the GitHub Release and upload assets
+  checks: write     # test report
+
+jobs:
+  release:
+    uses: ccswe-apps/actions/.github/workflows/dotnet-release-app.yml@master
+    with:
+      projects: src/CCSWE.AppManager.DeviceOwner.Desktop/CCSWE.AppManager.DeviceOwner.Desktop.csproj src/CCSWE.AppManager.DeviceOwner.Console/CCSWE.AppManager.DeviceOwner.Console.csproj

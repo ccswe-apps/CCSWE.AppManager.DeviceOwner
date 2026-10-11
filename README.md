@@ -1,8 +1,8 @@
 # CCSWE.AppManager.DeviceOwner
 
-[![CI](https://img.shields.io/github/actions/workflow/status/CoryCharlton/CCSWE.AppManager.DeviceOwner/ci.yml?branch=master&label=build)](https://github.com/CoryCharlton/CCSWE.AppManager.DeviceOwner/actions/workflows/ci.yml)
-[![CodeQL](https://img.shields.io/github/actions/workflow/status/CoryCharlton/CCSWE.AppManager.DeviceOwner/codeql.yml?branch=master&label=codeql)](https://github.com/CoryCharlton/CCSWE.AppManager.DeviceOwner/actions/workflows/codeql.yml)
-[![Release](https://img.shields.io/github/v/release/CoryCharlton/CCSWE.AppManager.DeviceOwner?display_name=tag&sort=semver)](https://github.com/CoryCharlton/CCSWE.AppManager.DeviceOwner/releases/latest)
+[![CI](https://img.shields.io/github/actions/workflow/status/ccswe-apps/CCSWE.AppManager.DeviceOwner/ci.yml?branch=master&label=build)](https://github.com/ccswe-apps/CCSWE.AppManager.DeviceOwner/actions/workflows/ci.yml)
+[![CodeQL](https://img.shields.io/github/actions/workflow/status/ccswe-apps/CCSWE.AppManager.DeviceOwner/codeql.yml?branch=master&label=codeql)](https://github.com/ccswe-apps/CCSWE.AppManager.DeviceOwner/actions/workflows/codeql.yml)
+[![Release](https://img.shields.io/github/v/release/ccswe-apps/CCSWE.AppManager.DeviceOwner?display_name=tag&sort=semver)](https://github.com/ccswe-apps/CCSWE.AppManager.DeviceOwner/releases/latest)
 [![License: GPL v3](https://img.shields.io/badge/license-GPLv3-blue.svg)](LICENSE)
 
 A small cross-platform helper (desktop app + matching console) that makes the **App Manager** Android app the
@@ -44,12 +44,12 @@ That's the whole app. The device-owner component is fixed to App Manager's; this
 Download the latest build for your platform — each archive contains both the desktop app and the console.
 The builds are framework-dependent, so you'll need the [.NET 10 runtime](https://dotnet.microsoft.com/download):
 
-- **Windows (x64):** [`CCSWE.AppManager.DeviceOwner-win-x64.zip`](https://github.com/CoryCharlton/CCSWE.AppManager.DeviceOwner/releases/latest/download/CCSWE.AppManager.DeviceOwner-win-x64.zip)
-- **Linux (x64):** [`CCSWE.AppManager.DeviceOwner-linux-x64.tar.gz`](https://github.com/CoryCharlton/CCSWE.AppManager.DeviceOwner/releases/latest/download/CCSWE.AppManager.DeviceOwner-linux-x64.tar.gz)
-- **macOS (Apple Silicon):** [`CCSWE.AppManager.DeviceOwner-osx-arm64.tar.gz`](https://github.com/CoryCharlton/CCSWE.AppManager.DeviceOwner/releases/latest/download/CCSWE.AppManager.DeviceOwner-osx-arm64.tar.gz)
-- **macOS (Intel):** [`CCSWE.AppManager.DeviceOwner-osx-x64.tar.gz`](https://github.com/CoryCharlton/CCSWE.AppManager.DeviceOwner/releases/latest/download/CCSWE.AppManager.DeviceOwner-osx-x64.tar.gz)
+- **Windows (x64):** [`CCSWE.AppManager.DeviceOwner-win-x64.zip`](https://github.com/ccswe-apps/CCSWE.AppManager.DeviceOwner/releases/latest/download/CCSWE.AppManager.DeviceOwner-win-x64.zip)
+- **Linux (x64):** [`CCSWE.AppManager.DeviceOwner-linux-x64.tar.gz`](https://github.com/ccswe-apps/CCSWE.AppManager.DeviceOwner/releases/latest/download/CCSWE.AppManager.DeviceOwner-linux-x64.tar.gz)
+- **macOS (Apple Silicon):** [`CCSWE.AppManager.DeviceOwner-osx-arm64.tar.gz`](https://github.com/ccswe-apps/CCSWE.AppManager.DeviceOwner/releases/latest/download/CCSWE.AppManager.DeviceOwner-osx-arm64.tar.gz)
+- **macOS (Intel):** [`CCSWE.AppManager.DeviceOwner-osx-x64.tar.gz`](https://github.com/ccswe-apps/CCSWE.AppManager.DeviceOwner/releases/latest/download/CCSWE.AppManager.DeviceOwner-osx-x64.tar.gz)
 
-(Or browse the [Releases page](https://github.com/CoryCharlton/CCSWE.AppManager.DeviceOwner/releases).) Or build from source:
+(Or browse the [Releases page](https://github.com/ccswe-apps/CCSWE.AppManager.DeviceOwner/releases).) Or build from source:
 
 ```bash
 # Build (Release)

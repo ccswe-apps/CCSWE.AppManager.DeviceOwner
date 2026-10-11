@@ -1,0 +1,17 @@
+name: Update dependencies
+
+# Opens an update PR when a CCSWE.Avalonia library publishes; its CI finds this repo
+# by this listener (ccswe-apps/actions `discover-dependents`).
+on:
+  repository_dispatch:
+    types: [update-dependencies]
+
+permissions:
+  contents: read
+
+jobs:
+  update:
+    uses: ccswe-apps/actions/.github/workflows/dotnet-update-dependencies.yml@master
+    secrets:
+      AUTOMATION_APP_ID: ${{ secrets.AUTOMATION_APP_ID }}
+      AUTOMATION_APP_KEY: ${{ secrets.AUTOMATION_APP_KEY }}

@@ -17,6 +17,7 @@
   <Folder Name="/eng/GitHub Actions/">
     <File Path="../.github/workflows/dotnet-build-app.yml" />
     <File Path="../.github/workflows/dotnet-release-app.yml" />
+    <File Path="../.github/workflows/update-dependencies.yml" />
     <File Path="../.github/workflows/codeql.yml" />
     <File Path="../.github/dependabot.yml" />
     <File Path="../.github/release.yml" />

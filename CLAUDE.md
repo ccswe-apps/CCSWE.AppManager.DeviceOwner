@@ -59,6 +59,8 @@ Package versions are centrally managed via **Central Package Management** (`src/
 Version="N" />` in `Directory.Packages.props` and a version-less `<PackageReference Include="X" />` in the
 project. Never put `Version=` on a `<PackageReference>` — it errors with NU1008.
 
+When a CCSWE.Avalonia.* library publishes, `.github/workflows/update-dependencies.yml` (ccswe-apps/actions `dotnet-update-dependencies.yml`) opens an andy PR bumping its `<PackageVersion>`; non-major bumps auto-merge. Dependabot excludes `CCSWE.*` from its cooldown and remains the fallback.
+
 ## Architecture
 
 Projects in `src/CCSWE.AppManager.DeviceOwner.slnx`:

@@ -8,7 +8,7 @@
     <PackageVersion Include="AvaloniaUI.DiagnosticsSupport" Version="2.2.3" />
     <PackageVersion Include="CCSWE.Avalonia.Hosting" Version="12.1.14" />
     <PackageVersion Include="CCSWE.Avalonia.Hosting.Desktop" Version="12.1.14" />
-    <PackageVersion Include="CCSWE.Avalonia.Material" Version="12.1.9" />
+    <PackageVersion Include="CCSWE.Avalonia.Material" Version="12.1.13" />
     <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.4.2" />
     <PackageVersion Include="JetBrains.Annotations" Version="2025.2.4" />
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.10.1" />

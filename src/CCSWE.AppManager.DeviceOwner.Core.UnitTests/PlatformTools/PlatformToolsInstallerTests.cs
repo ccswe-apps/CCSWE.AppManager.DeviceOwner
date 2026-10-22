@@ -79,7 +79,7 @@ public class PlatformToolsInstallerTests
         }
 
         [Test]
-        public void It_throws_when_the_archive_has_no_platform_tools_folder()
+        public async Task It_throws_when_the_archive_has_no_platform_tools_folder()
         {
             var installRoot = Path.Combine(Path.GetTempPath(), $"platform-tools-test-{Guid.NewGuid():N}");
 
@@ -89,7 +89,7 @@ public class PlatformToolsInstallerTests
 
                 using var zip = CreateZip("readme.txt");
 
-                Assert.ThrowsAsync<InvalidOperationException>(() => installer.ExtractAndRegisterAsync(zip, CancellationToken.None));
+                await Assert.ThrowsAsync<InvalidOperationException>(() => installer.ExtractAndRegisterAsync(zip, CancellationToken.None));
             }
             finally
             {

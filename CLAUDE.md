@@ -48,7 +48,9 @@ dotnet test src/CCSWE.AppManager.DeviceOwner.slnx
 dotnet test src/CCSWE.AppManager.DeviceOwner.slnx --filter "FullyQualifiedName~ClassName"
 ```
 
-The SDK is pinned via the repo-root `global.json`. `src/Directory.Build.props`
+The SDK is pinned to .NET 10 via the repo-root `global.json` (`rollForward: latestMinor`, so a .NET 11 SDK
+on the machine isn't used), and Dependabot ignores major updates of `Microsoft.Extensions.*`, which follow the
+.NET major. Lift both together when the app moves to .NET 11. `src/Directory.Build.props`
 applies `LangVersion=default`, `ImplicitUsings=enable`, and `Nullable=enable` solution-wide, and references
 JetBrains.Annotations and Nerdbank.GitVersioning (version derived from git history).
 

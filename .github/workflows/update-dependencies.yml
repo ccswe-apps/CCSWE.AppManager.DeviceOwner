@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   update:
-    uses: ccswe-apps/actions/.github/workflows/dotnet-update-dependencies.yml@master
+    uses: ccswe-apps/actions/.github/workflows/dotnet-update-dependencies.yml@v1
     secrets:
       AUTOMATION_APP_ID: ${{ secrets.AUTOMATION_APP_ID }}
       AUTOMATION_APP_KEY: ${{ secrets.AUTOMATION_APP_KEY }}

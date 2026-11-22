@@ -6,8 +6,8 @@
     <PackageVersion Include="Avalonia" Version="12.1.6" />
     <PackageVersion Include="Avalonia.Desktop" Version="12.1.6" />
     <PackageVersion Include="AvaloniaUI.DiagnosticsSupport" Version="2.2.3" />
-    <PackageVersion Include="CCSWE.Avalonia.Hosting" Version="12.1.26" />
-    <PackageVersion Include="CCSWE.Avalonia.Hosting.Desktop" Version="12.1.26" />
+    <PackageVersion Include="CCSWE.Avalonia.Hosting" Version="12.1.27" />
+    <PackageVersion Include="CCSWE.Avalonia.Hosting.Desktop" Version="12.1.27" />
     <PackageVersion Include="CCSWE.Avalonia.Material" Version="12.3.4" />
     <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.4.2" />
     <PackageVersion Include="JetBrains.Annotations" Version="2026.2.0" />
